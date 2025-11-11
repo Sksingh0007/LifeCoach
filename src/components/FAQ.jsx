@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -7,28 +8,34 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is life coaching and how can it help me?",
-      answer: "Life coaching is a collaborative process that helps you identify and achieve your personal and professional goals. Through powerful questioning, accountability, and support, I help you overcome obstacles, gain clarity, and create lasting positive changes in your life."
+      answer:
+        "Life coaching is a collaborative process that helps you identify and achieve your personal and professional goals. Through powerful questioning, accountability, and support, I help you overcome obstacles, gain clarity, and create lasting positive changes in your life.",
     },
     {
       question: "How long does a typical coaching program last?",
-      answer: "Most coaching programs range from 3-6 months, depending on your goals and needs. We'll work together to create a customized timeline that allows for meaningful progress while respecting your schedule and budget."
+      answer:
+        "Most coaching programs range from 3-6 months, depending on your goals and needs. We'll work together to create a customized timeline that allows for meaningful progress while respecting your schedule and budget.",
     },
     {
       question: "What's the difference between coaching and therapy?",
-      answer: "Coaching focuses on your present and future, helping you move forward toward your goals. While therapy often addresses past issues and healing, coaching is action-oriented and designed to help you achieve specific outcomes and unlock your potential."
+      answer:
+        "Coaching focuses on your present and future, helping you move forward toward your goals. While therapy often addresses past issues and healing, coaching is action-oriented and designed to help you achieve specific outcomes and unlock your potential.",
     },
     {
       question: "Do you offer online coaching sessions?",
-      answer: "Yes! I offer both in-person and online coaching sessions via video calls. Online sessions are just as effective and allow for greater flexibility in scheduling, making coaching accessible regardless of your location."
+      answer:
+        "Yes! I offer both in-person and online coaching sessions via video calls. Online sessions are just as effective and allow for greater flexibility in scheduling, making coaching accessible regardless of your location.",
     },
     {
       question: "What can I expect in our first session?",
-      answer: "In our discovery session, we'll explore your current situation, identify your goals, and discuss how coaching can help you. This is also an opportunity for you to ask questions and determine if we're a good fit to work together."
+      answer:
+        "In our discovery session, we'll explore your current situation, identify your goals, and discuss how coaching can help you. This is also an opportunity for you to ask questions and determine if we're a good fit to work together.",
     },
     {
       question: "How do I know if coaching is right for me?",
-      answer: "Coaching is ideal if you're ready to make positive changes, willing to take action, and committed to your growth. If you feel stuck, want to achieve specific goals, or desire greater fulfillment in life, coaching can be transformational."
-    }
+      answer:
+        "Coaching is ideal if you're ready to make positive changes, willing to take action, and committed to your growth. If you feel stuck, want to achieve specific goals, or desire greater fulfillment in life, coaching can be transformational.",
+    },
   ];
 
   const toggleFAQ = (index) => {
@@ -87,7 +94,7 @@ const FAQ = () => {
             href="#contact"
             className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-lg hover:from-violet-700 hover:to-indigo-700 transition-all duration-300 text-sm sm:text-base"
           >
-            Get in Touch
+            <Link to="/book">Get in Touch</Link>
           </a>
         </div>
       </div>

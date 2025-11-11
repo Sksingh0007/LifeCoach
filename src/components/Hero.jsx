@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
                 size="lg" 
                 className="rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white border-0 px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                Book Your Free Discovery Call Now
+                <Link to="/book">Book Your Free Discovery Call Now</Link>
               </Button>
               <Button 
                 variant="outline" 

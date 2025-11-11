@@ -1,17 +1,22 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-violet-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-violet-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800"
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 sm:mb-16 px-4">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Ready to Transform Your Life?
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Take the first step towards your breakthrough. Book your free consultation today.
+            Take the first step towards your breakthrough. Book your free
+            consultation today.
           </p>
         </div>
 
@@ -63,7 +68,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <Button className="w-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white py-3">
-                Send Message
+                <Link to="/book"> Send Message</Link>
               </Button>
             </form>
           </div>
@@ -80,8 +85,12 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-violet-600 dark:text-violet-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Email</p>
-                    <p className="text-gray-600 dark:text-gray-300">theshaktiawakens@gmail.com</p>
+                    <p className="font-medium text-gray-900 dark:text-white">
+                      Email
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      theshaktiawakens@gmail.com
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -89,8 +98,12 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-violet-600 dark:text-violet-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Phone</p>
-                    <p className="text-gray-600 dark:text-gray-300">+91-9279231459</p>
+                    <p className="font-medium text-gray-900 dark:text-white">
+                      Phone
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      +91-9279231459
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -98,8 +111,12 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-violet-600 dark:text-violet-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Location</p>
-                    <p className="text-gray-600 dark:text-gray-300">Bangalore, India</p>
+                    <p className="font-medium text-gray-900 dark:text-white">
+                      Location
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Bangalore, India
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -107,20 +124,30 @@ const Contact = () => {
                     <Clock className="h-6 w-6 text-violet-600 dark:text-violet-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Availability</p>
-                    <p className="text-gray-600 dark:text-gray-300">Mon-Fri: 9AM-6PM IST</p>
+                    <p className="font-medium text-gray-900 dark:text-white">
+                      Availability
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Mon-Fri: 9AM-6PM IST
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-2xl p-4 sm:p-6 lg:p-8 text-white">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Free Consultation</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
+                Free Consultation
+              </h3>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base">
-                Book a 30-minute discovery call to explore how I can help you achieve your goals.
+                Book a 30-minute discovery call to explore how I can help you
+                achieve your goals.
               </p>
-              <Button variant="secondary" className="bg-white text-violet-600 hover:bg-gray-100 w-full sm:w-auto">
-                Schedule Call
+              <Button
+                variant="secondary"
+                className="bg-white text-violet-600 hover:bg-gray-100 w-full sm:w-auto"
+              >
+                <Link to="/book"> Schedule Call</Link>
               </Button>
             </div>
           </div>
